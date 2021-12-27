@@ -93,49 +93,49 @@ $(window).scroll(function() {
     $('.getintouch').css('background-image', 'url(images/bg/getintouch.jpg)');
 		
 		
-		var map;
-		map = new GMaps({
-			el: '.js-gmap',
-			lat: 55.722614,
-			lng: 37.668403,
-			scrollwheel:false,
-			zoom: 14,
-			zoomControl : true,
-			panControl : false,
-			streetViewControl : false,
-			mapTypeControl: false,
-			overviewMapControl: false,
-			clickable: false
-		});
-
-
-		var image = 'images/map-marker.png';
-
-		map.addMarker({
-			lat: 55.722614,
-			lng: 37.668403,
-			icon: image,
-			animation: google.maps.Animation.DROP,
-			verticalAlign: 'bottom',
-			horizontalAlign: 'center',
-			backgroundColor: '#d3cfcf',
-			infoWindow:{
-				content: '<div class="map-info">г. Москва<br>ул. Шарикоподшипниковская, д. 5</div>'
-			}
-		});
+		// var map;
+		// map = new GMaps({
+		// 	el: '.js-gmap',
+		// 	lat: 55.722614,
+		// 	lng: 37.668403,
+		// 	scrollwheel:false,
+		// 	zoom: 14,
+		// 	zoomControl : true,
+		// 	panControl : false,
+		// 	streetViewControl : false,
+		// 	mapTypeControl: false,
+		// 	overviewMapControl: false,
+		// 	clickable: false
+		// });
+		//
+		//
+		// var image = 'images/map-marker.png';
+		//
+		// map.addMarker({
+		// 	lat: 55.722614,
+		// 	lng: 37.668403,
+		// 	icon: image,
+		// 	animation: google.maps.Animation.DROP,
+		// 	verticalAlign: 'bottom',
+		// 	horizontalAlign: 'center',
+		// 	backgroundColor: '#d3cfcf',
+		// 	infoWindow:{
+		// 		content: '<div class="map-info">г. Москва<br>ул. Шарикоподшипниковская, д. 5</div>'
+		// 	}
+		// });
 		 
-		var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
-
-		map.addStyle({
-			styledMapName:"Styled Map",
-			styles: styles,
-			mapTypeId: "map_style"  
-		});
-
-		map.setStyle("map_style");
-		$(window).resize(function(){
-			google.maps.event.trigger(map, "resize");
-		});
+		// var styles = [{"stylers":[{"saturation":-100},{"gamma":0.8},{"lightness":4},{"visibility":"on"}]},{"featureType":"landscape.natural","stylers":[{"visibility":"on"},{"color":"#5dff00"},{"gamma":4.97},{"lightness":-5},{"saturation":100}]}];
+		//
+		// map.addStyle({
+		// 	styledMapName:"Styled Map",
+		// 	styles: styles,
+		// 	mapTypeId: "map_style"
+		// });
+		//
+		// map.setStyle("map_style");
+		// $(window).resize(function(){
+		// 	google.maps.event.trigger(map, "resize");
+		// });
 
 
 
